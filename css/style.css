@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+  font-family: 'Epilogue', sans-serif;
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+body{
+  font-family: 'Epilogue', sans-serif;
+  background-color: hsl(0, 0%, 98%) !important;
+}
+a.nav-link {
+  color: hsl(0, 0%, 8%);
+}
+li.nav-item {
+  margin-left: 25px;
+}
+a.btn-login {
+    margin-right: 25px;
+}
+a.btn-login > button.btn.btn-outline-dark {
+  border: 0px;
+}
+ul.dropdown-menu.show {
+  border: 0;
+  background: transparent;
+  box-shadow: 0px 0px 109px -17px rgb(0 0 0 / 50%);
+}
+a.btn-register > button,
+a.btn-login > button {
+  padding: 6px 20px;
+}
+a.dropdown-item >img {
+  margin-right: 10px;
+  margin-left: 8px;
+}
+img.img-lado-esquerdo-desktop {
+  width: 390px;
+}
+h1.titulo-page {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.0em;
+}
+.col-md-6.parte-texto {
+  display: grid;
+  align-content: center;
+}
+.biblioteca-images {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+}
+.col-md-6.parte-texto > p {
+  margin-top: 25px;
+}
+.col-md-6.parte-texto > p {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.col-md-6.section-image {
+  display: flex;
+  justify-content: flex-end;
+}
+section.container.site_body {
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
