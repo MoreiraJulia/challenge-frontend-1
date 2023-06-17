@@ -5,11 +5,19 @@
   background: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 8%);
 }
-body{
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: 'Epilogue', sans-serif;
   background-color: hsl(0, 0%, 98%) !important;
 }
 a.nav-link {
+  color: hsl(0, 0%, 41%);
+}
+a.nav-link:hover {
   color: hsl(0, 0%, 8%);
 }
 li.nav-item {
@@ -66,4 +74,42 @@ h1.titulo-page {
 section.container.site_body {
   margin-top: 25px;
   padding-bottom: 15px;
+}
+header {
+  padding: 20px;
+}
+a.btn-login button,
+a.btn-register button{
+  color: hsl(0, 0%, 41%)
+}
+a.btn-register{
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+}
+a.btn-login button:hover,
+a.btn-register button:hover {
+  color: hsl(0, 0%, 8%) ;
+}
+a.btn-register:hover{
+  border: 2px solid hsl(0, 0%, 8%) ;
+}
+button.btn.learn-more {
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border-radius: 15px;
+  padding: 10px 25px;
+  border: 2px solid hsl(0, 0%, 8%);
+}
+button.btn.learn-more:hover {
+  background:hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: transparent !important;
+}
+.dropdown-item {
+  color: hsl(0, 0%, 41%) !important;
+}
+.dropdown-item:hover {
+  color: hsl(0, 0%, 8%) !important; 
 }

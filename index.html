@@ -10,57 +10,63 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Features
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><img src="images/icon-todo.svg" width="12" alt="Icone de uma lista"> Todo List</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-calendar.svg" width="12" alt="Icone de um calendário"> Calendar</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-reminders.svg" width="12" alt="Icone de um sino de notificação"> Reminders</a></li>
-              <li><a class="dropdown-item" href="#"><img src="images/icon-planning.svg" width="12" alt="Icone de um relógio"> Planning</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-todo.svg" width="12" alt="Icone de uma lista"> Todo List</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-calendar.svg" width="12" alt="Icone de um calendário"> Calendar</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-reminders.svg" width="12" alt="Icone de um sino de notificação"> Reminders</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="images/icon-planning.svg" width="12" alt="Icone de um relógio"> Planning</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Company
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">History</a></li>
-              <li><a class="dropdown-item" href="#">Our Team</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">About</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <a class="btn-login"><button class="btn btn-outline-dark">Login</button></a>
-          <a class="btn-register"><button class="btn btn-outline-dark">Register</button></a>
+            <div class="d-flex">
+              <a class="btn-login"><button class="btn">Login</button></a>
+              <a class="btn-register"><button class="btn">Register</button></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-
-  <section class="container site_body">
-    <div class="row">
-      <div class="col-md-6 parte-texto">
+  <main class="container site_body">
+    <article class="row">
+      <section class="col-md-6 parte-texto">
         <h1 class="titulo-page">Make<br>remore work</h1>
         <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-        <a href="" class="btn-learn-more"><button class="btn btn-outline-dark">Learn more</button></a>
+        <a href="" class="btn-learn-more"><button class="btn learn-more">Learn more</button></a>
         <div class="biblioteca-images">
           <img src="images/client-databiz.svg">
           <img src="images/client-audiophile.svg">
@@ -68,13 +74,13 @@
           <img src="images/client-maker.svg">
         </div>
 
-      </div>
-      <div class="col-md-6 section-image">
+      </section>
+      <section class="col-md-6 section-image">
         <img class="img-lado-esquerdo-desktop" src="images/image-hero-desktop.png">
-      </div>
-    </div>
+      </section>
+    </article>
 
-  </section>
+  </main>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
