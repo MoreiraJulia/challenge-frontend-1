@@ -28,15 +28,18 @@ li.nav-item {
   margin-left: 25px;
 }
 a.btn-login {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 a.btn-login > button.btn.btn-outline-dark {
   border: 0px;
 }
 ul.dropdown-menu.show {
   border: 0;
-  background: transparent;
+  padding: 15px 0px;
   box-shadow: 0px 0px 109px -17px rgb(0 0 0 / 50%);
+}
+a.nav-link {
+  cursor: pointer;
 }
 a.btn-register > button,
 a.btn-login > button {
@@ -65,9 +68,6 @@ h1.titulo-page {
   margin-top: 65px;
 }
 .col-md-6.parte-texto > p {
-  margin-top: 25px;
-}
-.col-md-6.parte-texto > p {
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -80,7 +80,7 @@ section.container.site_body {
   padding-bottom: 15px;
 }
 header {
-  padding: 20px;
+  padding: 18px;
 }
 a.btn-login button,
 a.btn-register button{
@@ -93,6 +93,9 @@ a.btn-register{
 a.btn-login button:hover,
 a.btn-register button:hover {
   color: var(--cor-secundaria);
+}
+.btns__login__register{
+  display: flex;
 }
 a.btn-register:hover{
   border: 2px solid var(--cor-secundaria);
@@ -116,4 +119,69 @@ button.btn.learn-more:hover {
 }
 .dropdown-item:hover {
   color: var(--cor-secundaria) !important; 
+}
+.img-topo-mobile{
+  display: none;
+}
+.titulo__page__mobile{
+  display: none;
+}
+@media(max-width: 789px){
+  .img-topo-mobile{
+    display: block;
+  }
+  .img-lado-esquerdo-desktop{
+    display: none;
+  }
+  .titulo__page__mobile{
+    display: block;
+  }
+  .titulo__page__desktop{
+    display: none;
+  }
+  .conteudo__site__mobile__desktop {
+    flex-direction: column-reverse;
+  }
+  .section-image {
+    padding: 0 !important;
+    margin-bottom: 3.5em;
+  }
+  h1.titulo-page {
+    font-size: 38px;
+  }
+  .parte-texto {
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .col-md-6.parte-texto > p {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .biblioteca-images > img {
+    width: 80px;
+  }
+  div#offcanvasNavbar2 {
+    width: 280px;
+  }
+  .offcanvas-header {
+    justify-content: end !important;
+  }
+  .btns__login__register{
+    display: grid;
+    text-align: center;
+  }
+  ul.dropdown-menu.show {
+    box-shadow: none;
+  }
+  button.navbar-toggler {
+    border: none !important;
+  }
+  .navbar-toggler-icon {
+    width: 2.5em !important;
+    height: 2.5em !important; 
+    background-image: url("../images/icon-menu.svg") !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
 }
